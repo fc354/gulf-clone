@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --blue-brand: #1677ff;
+  --blue-light: #e8f1ff;
+  --green-safe: #00b96b;
+  --green-light: #e8fff4;
+  --amber-mid: #fa8c16;
+  --amber-light: #fff7e6;
+  --red-high: #f5222d;
+  --red-light: #fff1f0;
+  --text-primary: #1a1a1a;
+  --text-secondary: #666;
+  --text-muted: #999;
+  --bg-page: #f5f6fa;
+  --bg-card: #ffffff;
+  --border: #ebebeb;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+body {
+  background: var(--bg-page);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100vh;
+  position: relative;
+}
+
+.card {
+  background: var(--bg-card);
+  border-radius: 16px;
+}
+
+.container-page {
+  padding: 0 16px;
+}
+
+/* Bottom nav safe area */
+.page-content {
+  padding-bottom: 80px;
+}
